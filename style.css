@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    font-size:large;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #0c0b0b;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+  }
+  
+  /* Header Section */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+  }
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  header .logo img{
+    height: 50px;
+    width: 80px;
+    border-radius: 10px;
+  }
+
+  header .logo img:hover{
+    transition:  0.3s ease;
+    transition-duration: 500ms;
+    transform: scale(1.1);
+  }
+
+  
+  header nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  header nav ul li {
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  header nav ul li a:hover {
+    color: #ff9800;
+    transition:  0.3s ease;
+    transition-duration: 500ms;
+    transform: scale(1.1);
+  }
+  
+  header .toggle-mode {
+    background: #ff9800;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  header .toggle-mode:hover {
+    background: #ff6f00;
+    transition: transform 0.3s ease;
+    transition-duration: 500ms;
+    transform: scale(1.1);
+  }
+  
+  /* Sections */
+  section {
+    padding: 100px 40px;
+    text-align: center;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Home Section */
+  #home {
+    background: url('Assets/') repeat center/cover;
+    color: #000000;
+    padding: 150px 40px;
+  }
+
+
+  #home .profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50px ;
+    margin: 20px 0;
+    animation:  1.5s ease-in-out;
+  }
+  
+  
+  #home .profile-image:hover{
+    transform: scale(1.1);
+    transition:  0.3s ease-in-out;
+    transition-duration: 500ms;
+  }
+     
+
+  
+  #home .social-icons a {
+    margin: 0 10px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition:  0.3s, color 0.3s;
+  }
+  
+  #home .social-icons a:hover {
+    transform: scale(1.1);
+    color:#ff9800;
+  }
+
+  #home .social-icons i:hover{
+    transform: scale(1.1);
+    color: #ff9800;
+    transition:ease-in;
+    transition-duration: 200ms;
+  }
+  
+  #home .resume-btn {
+    background: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #home .resume-btn:hover {
+    background: #ff6f00;
+    transform: scale(1.1);
+    transition:  0.3s ease;
+    transition-duration: 500ms;
+  }
+  
+  /* About Section */
+  #about img {
+    width: 250px;
+    height: 300px;
+    border-radius: 50px;
+    padding: 5px 10px 5px 10px;
+  }
+  
+  #about .read-more-btn {
+    background: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  #about img:hover{
+    transform: scale(1.1);
+    transition:  0.3s ease-in-out;
+    transition-duration: 500ms;
+  }
+  
+  #about .read-more-btn:hover {
+    background: #ff6f00;
+    transition: 0.3s ease;
+    transition-duration: 500ms;
+    transform: scale(1.1);
+  }
+  
+  /* Skills Section */
+  #skills .skill {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  #skills .progress-bar {
+    background: #ddd;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 10px;
+  }
+  
+  #skills .progress {
+    height: 100%;
+    background: #ff9800;
+    transition: width 1s;
+    
+  }
+
+
+  /* Certifications Section */
+  #certifications .cert-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #certifications .cert-card button {
+    background: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #certifications .cert-card button:hover {
+    background: #ff6f00;
+    transition: 0.3s ease;
+    transition-duration: 500ms;
+    transform: scale(1.1);
+  }
+  
+  /* Projects Section */
+  #projects .project-card {
+    display: inline-block;
+    background: #fff;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    height: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+  }
+  
+  #projects .project-card img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  #projects .project-card:hover {
+    transform: scale(1.2);
+    transition-duration: 500ms;
+    cursor: pointer;
+  }
+  
+  /* Contact Section */
+  #contact form {
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  #contact form input, #contact form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  #contact form button {
+    background: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #contact form button:hover {
+    background: #ff6f00;
+    transition: transform 0.3s ease;
+    transition-duration: 500ms;
+    transform: scale(1.1);
+  }
+  
+  /* Footer Section */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer button {
+    background: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  footer button:hover {
+    background: #ff6f00;
+    transition: transform 0.3s ease;
+    transition-duration: 500ms;
+    transform: scale(1.1);
+  }
+  
+  /* additional codes for practice */
+  .color{
+    color: #ff9800;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      padding: 10px 0;
+    }
+  
+    section {
+      padding: 50px 20px;
+    }
+  
+    #projects .project-card {
+      width: 100%;
+    }
+  }
+  
